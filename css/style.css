@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root{
+    --primary-font: 'Roboto', sans-serif;
+    --primary-icon-color: #f55767;
+    --secondry-icon-color:#2563ff;
+    --thirded-icon-color: #40975f;
+    --primary-text-color: #242f51;
+    --secondry-text-color: #313b5b;
+    --thirded-text-color: #bababd;
+    --btn-color: #2500f9;
+    --white-color: #fff;
+    --black-color: #000;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--primary-font);
+    font-size: 100%;
+    font-weight: 400;
+}
+::-webkit-scrollbar{
+    width: 1px;
+}
+::-webkit-scrollbar-track{
+    background: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--white-color);
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:active,
+:hover,
+:focus{
+    outline: 0;
+    outline-offset: 0;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: var(--primary-text-color);
+    font-weight: 900;
+    /*font-size: 48px;*/
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+h2{
+    color:var(--secondry-text-color);
+    font-weight: 700;
+    /*font-size: 36px;*/
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+h4{
+    color:var(--secondry-text-color);
+    font-weight: 500;
+    /*font-size: 25px;*/
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+p{
+    color:var(--thirded-text-color);
+    font-weight: 400;
+    /*font-size: 16px;*/
+    margin-bottom: 15px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+
+#######custom css#########
+
+*/
+
+
+.main-btn{
+    background-color: var(--btn-color);
+    color: var(--white-color);
+	border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    display: inline-block;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0/ 20%);
+    transition: all .4s ease-out 0s;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s; 
+}
+
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+}
+
+.second-btn{
+    background-color: var(--white-color);
+    color: var(--btn-color);
+	border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    display: inline-block;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0/ 20%);
+    transition: all .4s ease-out 0s;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s; 
+}
+
+.second-btn:hover{
+    background-color: var(--white-colorr);
+    color: var(--btn-color);
+    border: 1px solid var(--btn-color);
+}
+
+
+.wrapper{
+    margin: 130px 0px;
+}
+
+.app-features ul li img,
+.app-features2 img{
+    margin-bottom: 20px;
+}
+.app-features3 .main-btn,
+.app-features5 .main-btn
+{
+    margin-top: 20px;
+}
+.app-features4 img,
+.app-features5 img
+{
+    margin-bottom: 20px;
+}
+
+/*
+
+#######header css#########
+
+*/
+
+
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    border: unset;
+    outline: unset;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0 10px;
+    transition: all 20ms linear;
+    margin-top: 5px;
+}
+
+.nav-link{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--secondry-text-color);
+    letter-spacing: 1px;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: var(--secondry-text-color);
+}
+
+/*
+
+#######banner css#########
+
+*/
+
+
+.hero-section{
+    width: 100%;
+    background: url("/img/bg.png") no-repeat center;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 0px 0px 50px;
+}
+.badge-text {
+	background-color: #eee;
+	border-radius: 50px;
+	padding: 5px 10px;
+}
+.badge{
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.btn-group button{
+    margin: 20px 10px;
+}
+
+/*
+
+#######truested-section css#########
+
+*/
+.truested-section img{
+    margin: 8px 16px;
+}
+
+
+/*
+
+#######app-features css#########
+
+*/
+
+
+.app-features ul{
+    list-style: none;
+}
+.app-features ul li{
+    margin-top: 50px;
+}
+
+/*
+
+#######priceing section css#########
+
+*/
+
+.priceing-section .btn-group{
+    margin: 40px 0;
+} 
+
+.card-header nav{
+   display: inline-flex;
+   padding-top: 40px;
+}
+
+.card-body .btn{
+    margin-top: 10px;
+}
+
+
+
+.carousel-control-next, .carousel-control-prev{
+    top: auto;
+}
+.carousel-control-next-icon{
+    background-color: #000;
+    padding: 20px;
+}
+
+/*
+
+#######callaction section css#########
+
+*/
+
+
+.callaction-section{
+    width: 100%;
+    background: url("/img/bannerobject/bannerobj6.png") no-repeat top right;
+    background-size: contain;
+    background-attachment: scroll;
+    padding: 0px 0px 50px;
+}
+.callaction-section .img-grp{
+    margin-top: 20px;
+}
+
+/*
+
+#######footer section css#########
+
+*/
+
+
+.footer-section{
+    background-color: var(--primary-text-color);
+}
+
+
+
+.footer-section .footer-link{
+    color: var(--white-color);
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.footer-section .footer-link:hover{
+    color:gray;
+}
+
+.footer-social a i{
+    font-size: 20px;
+    padding: 0 20px;
+    color:gray;
+}
+
+.footer-social a:hover i{
+    color: var(--white-color);
+}
+
+ 
